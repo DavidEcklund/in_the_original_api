@@ -1,8 +1,13 @@
 class ApplicationController < ActionController::API
   def hello
-    hello_world = {
-      "msg": "Hello, World!"
+    texts = {
+      id: 1,
+      sentences: ["1", "2", "3"]
+    },
+    {
+      id: 2,
+      sentences: ["I", "II", "III"]
     }
-    render json: hello_world
+    render json: texts
   end
 end
