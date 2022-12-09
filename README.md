@@ -109,6 +109,8 @@
 - inherits from Text, but ***not*** STI
 - attr. array: contains canonical sentence split
     - all other Texts conform to its sentences
+    - A single `"sentence chunk"` is exactly 1 sentence each in the case of the UrText, but less || more than 1 sentence for every other Text
+        - **not** an object or model, simply a string at a certain index
 - update DB seed to populate UrText with correct text
     - establish appropriate associations in seed too
 
